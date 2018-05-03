@@ -90,9 +90,9 @@ hcb_user = {
     subscribe:'email me replies',
     are_you_sure:'Do you want to flag this comment as inappropriate?',
 
-    reply:'<img src="//www.htmlcommentbox.com/static/images/reply.png"/> reply',
-    flag:'<img src="//www.htmlcommentbox.com/static/images/flag.png"/> flag',
-    like:'<img src="//www.htmlcommentbox.com/static/images/like.png"/> like',
+    reply:'Reply',
+    flag:'Report',
+    like:'Like',
 
     /* dates */
     days_ago:'days ago',
@@ -112,7 +112,7 @@ hcb_user = {
 
     /* SETTINGS */
     MAX_CHARS: 8192,
-    PAGE: getQueryVariable('chat')+getQueryVariable('pwrd'), /* ID of the webpage to show comments for. defaults to the webpage the user is currently visiting. */
+    PAGE: getQueryVariable('id'), /* ID of the webpage to show comments for. defaults to the webpage the user is currently visiting. */
     ON_COMMENT: function(){hcb.make_comment_form()}, /* Function to call after commenting. */
     RELATIVE_DATES:true /* show dates in the form "X hours ago." etc. */
 };
@@ -120,8 +120,9 @@ hcb_user = {
 <!-- done customizing labels of htmlcommentbox.com -->
 
 </script>
-
+<center>
 <<!-- begin wwww.htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24EpHRb20eWHwIhTm2Pkf2J."+"&opts=18190&num=50&ts=1525381387923");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
+</center>
