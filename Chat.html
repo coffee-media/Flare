@@ -63,15 +63,16 @@ function getQueryVariable(variable)
        }
        return(false);
 }
-	document.getElementById('title').innerHTML = "Flare - " + atob(getQueryVariable('id'));
+	document.getElementById('title').innerHTML = "Flare - " + getQueryVariable('id');
 	var page = getQueryVariable('chat');
 
-
+</script>
+<script>
 /* This code goes ABOVE the main HTML Comment Box code!
  replace the text in the single quotes below to customize labels.*/
 hcb_user = {
     /* L10N */
-    comments_header : atob(getQueryVariable('id')),
+    comments_header : getQueryVariable('id'),
     name_label : 'Name',
     content_label: 'Enter here',
     submit : 'Post',
