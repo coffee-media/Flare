@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -35,13 +36,14 @@
   </ul>
 </nav>
 	<script id="script">
+		
 	function checkEnter() {
-		var $name = $("#hcb_form_name").text()
-		$(".comment").addClass("them");
-		$(".comment:contains('" + $name + "')").addClass("me").removeClass("them");
-		$(".hcb-comment-tb").removeClass("hcb-comment-tb");
-		$(".inputfile").removeClass("inputfile");
-		$( "label[for='hcb_file']" ).text( "Upload Image" ).addClass("btn").addClass("btn-success");
+
+	$(".comment").addClass('well');
+		$(".submit").addClass("btn").addClass("btn-submit");
+$(".hcb-comment-tb").removeClass('hcb-comment-tb');
+$('.inputfile').removeClass('inputfile');
+$( "label[for='hcb_file']" ).text( "Upload Image" ).addClass('btn').addClass('btn-success');
 	}
 	setInterval(checkEnter, 0)
   </script>
